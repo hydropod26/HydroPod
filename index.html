@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#0a1118">
-<title>Project OxyPod: Biomimetic Deep-Sea Energy Harvester</title>
-<meta name="description" content="Project OxyPod harnesses abyssal dark oxygen and biomimetic geoelectric potential: a synthetic nodule array and a 0.3 V subsea booster that split seawater into hydrogen and oxygen.">
+<title>Project HydroPod: Biomimetic Deep-Sea Energy Harvester</title>
+<meta name="description" content="Project HydroPod harnesses abyssal dark oxygen and biomimetic geoelectric potential: a synthetic nodule array and a 0.3 V subsea booster that split seawater into hydrogen and oxygen.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a1118'/%3E%3Cpath d='M16 5c4.400 0 8 3.800 8 8.800 0 5.600-3.500 9.600-8 14.200-4.500-4.600-8-8.600-8-14.200C8 8.800 11.600 5 16 5z' fill='none' stroke='%2300f2fe' stroke-width='2'/%3E%3Ccircle cx='13.500' cy='14' r='2' fill='%2300f2fe'/%3E%3Ccircle cx='18.200' cy='18' r='2.800' fill='%232f7bff'/%3E%3C/svg%3E">
 
 <style>
 /* ==========================================================================
-   Project OxyPod, design tokens
+   Project HydroPod, design tokens
    ========================================================================== */
 :root{
   --abyss:#0a1118;
@@ -459,7 +459,7 @@ p{margin:0}
 <!-- ===================== 1. NAVIGATION ===================== -->
 <header class="nav">
   <div class="wrap nav-inner">
-    <a class="logo" href="#home" aria-label="OxyPod, back to top">
+    <a class="logo" href="#home" aria-label="HydroPod, back to top">
       <svg viewBox="0 0 32 32" aria-hidden="true">
         <defs>
           <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
@@ -470,7 +470,7 @@ p{margin:0}
         <circle cx="13.500" cy="13" r="2.200" fill="url(#logoGrad)"/>
         <circle cx="18.500" cy="17.500" r="3" fill="url(#logoGrad)"/>
       </svg>
-      <span>OXYPOD</span>
+      <span>HYDROPOD</span>
     </a>
 
     <ul class="nav-links" id="menu">
@@ -500,7 +500,7 @@ p{margin:0}
 <section class="hero" id="home" data-nav="home">
   <canvas id="heroCanvas" aria-hidden="true"></canvas>
   <div class="hero-inner">
-    <h1>Project OxyPod</h1>
+    <h1>Project HydroPod</h1>
     <p class="hero-sub">Harnessing Abyssal Dark Oxygen &amp; Biomimetic Geoelectric Potential</p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="#simulation">Run the simulation</a>
@@ -537,7 +537,7 @@ p{margin:0}
   <div class="wrap">
     <header class="section-head">
       <h2>The discovery and the basic idea</h2>
-      <p class="lead">Four thousand metres down, in total darkness, metal-rich rocks on the seabed appear to make oxygen. OxyPod turns that finding into a working harvester.</p>
+      <p class="lead">Four thousand metres down, in total darkness, metal-rich rocks on the seabed appear to make oxygen. HydroPod turns that finding into a working harvester.</p>
     </header>
 
     <div class="split">
@@ -554,7 +554,7 @@ p{margin:0}
         <h3>The problem and the solution</h3>
         <div class="seg" role="group" aria-label="Choose a scenario">
           <button class="seg-btn" type="button" data-mode="natural" aria-pressed="true">The problem: nature alone</button>
-          <button class="seg-btn" type="button" data-mode="boost" aria-pressed="false">The solution: OxyPod</button>
+          <button class="seg-btn" type="button" data-mode="boost" aria-pressed="false">The solution: HydroPod</button>
         </div>
 
         <div class="gap" id="gap" data-mode="natural">
@@ -580,11 +580,11 @@ p{margin:0}
 <section class="section" id="mechanism" data-nav="mechanism">
   <div class="wrap">
     <header class="section-head">
-      <h2>How OxyPod works</h2>
+      <h2>How HydroPod works</h2>
       <p class="lead">Four stages take a seabed full of weak batteries to two clean gas streams. Select a stage to see the detail.</p>
     </header>
 
-    <div class="steps" role="tablist" aria-label="OxyPod working mechanism">
+    <div class="steps" role="tablist" aria-label="HydroPod working mechanism">
       <button class="step card spot is-on" type="button" role="tab" id="tab0" aria-selected="true" aria-controls="panel" data-step="0">
         <span class="step-n" aria-hidden="true">1</span>
         <span class="step-t">Synthetic Nodule Catalyst Grid</span>
@@ -602,7 +602,7 @@ p{margin:0}
       </button>
       <button class="step card spot" type="button" role="tab" id="tab3" aria-selected="false" aria-controls="panel" tabindex="-1" data-step="3">
         <span class="step-n" aria-hidden="true">4</span>
-        <span class="step-t">Subsea OxyPod Hood Collection &amp; Risers</span>
+        <span class="step-t">Subsea HydroPod Hood Collection &amp; Risers</span>
         <span class="step-s">Hoods catch the gas and send it upward.</span>
       </button>
     </div>
@@ -631,7 +631,7 @@ p{margin:0}
 
     <div class="sim">
       <div class="sim-stage card" id="simStage">
-        <canvas id="simCanvas" role="img" aria-label="Animated simulation of an OxyPod collector unit on the seabed. Hydrogen bubbles rise from the cathode pylon on the left and oxygen bubbles rise from the anode pylon on the right, each into its own collection hood and riser."></canvas>
+        <canvas id="simCanvas" role="img" aria-label="Animated simulation of an HydroPod collector unit on the seabed. Hydrogen bubbles rise from the cathode pylon on the left and oxygen bubbles rise from the anode pylon on the right, each into its own collection hood and riser."></canvas>
       </div>
 
       <aside class="sim-panel card" id="simPanel" data-state="optimal" aria-label="Simulation controls and readouts">
@@ -700,7 +700,7 @@ p{margin:0}
         <div>
           <h2>Help shape sustainable ocean technology</h2>
           <p>The deep sea belongs to everyone, so the people who live with the ocean should help decide how it is used. Our community survey asks what you think about harvesting energy from the seabed, which safeguards you would expect, and what you would want to know before any pilot goes ahead.</p>
-          <p>Your answers shape how we design, test and talk about OxyPod.</p>
+          <p>Your answers shape how we design, test and talk about HydroPod.</p>
           <div class="callout-actions">
             <a class="btn btn-primary" id="surveyBtn" href="#" data-survey-link>Take the survey</a>
             <a class="btn btn-ghost" href="#contact">Ask us a question</a>
@@ -723,8 +723,8 @@ p{margin:0}
 <section class="section" id="team" data-nav="contact">
   <div class="wrap">
     <header class="section-head">
-      <h2>The team behind OxyPod</h2>
-      <p class="lead">Four people, four disciplines, one idea about what the abyss can power.</p>
+      <h2>The team behind HydroPod</h2>
+      <p class="lead">Five people, five disciplines, one idea about what the abyss can power.</p>
     </header>
 
     <div class="team">
@@ -737,7 +737,13 @@ p{margin:0}
       <article class="member card spot">
         <div class="avatar" aria-hidden="true">AK</div>
         <h3>Aadi Kuttan</h3>
-        <p class="role">Digital Vanguard &amp; Web Lead</p>
+        <p class="role">Media &amp; Research</p>
+        <p>Researches the science and creates media to share HydroPod’s story.</p>
+      </article>
+      <article class="member card spot">
+        <div class="avatar" aria-hidden="true">F</div>
+        <h3>Fizan</h3>
+        <p class="role">Dev Team</p>
         <p>Turns the science into the interactive simulation and the site you are reading.</p>
       </article>
       <article class="member card spot">
@@ -750,17 +756,18 @@ p{margin:0}
         <div class="avatar" aria-hidden="true">JN</div>
         <h3>Jetin Narendran</h3>
         <p class="role">Presentation Lead &amp; Front-man</p>
-        <p>Takes OxyPod to judges, schools and the public, and answers the hard questions.</p>
+        <p>Takes HydroPod to judges, schools and the public, and answers the hard questions.</p>
       </article>
     </div>
 
     <div class="contact" id="contact" data-nav="contact">
       <div class="contact-copy">
         <h2>Send the team a message</h2>
-        <p>Questions about the science, ideas for the design, or an invitation to present? Write to us below. Your message opens in your email app, ready to send.</p>
+        <p>Questions about the science, ideas for the design, or an invitation to present? Write to us below and we’ll receive your message by email.</p>
       </div>
 
-      <form class="form card" id="contactForm" novalidate>
+      <form class="form card" id="contactForm" action="https://formsubmit.co/hydropod26@gmail.com" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="New HydroPod question">
         <div class="form-row">
           <div class="field">
             <label for="cName">Your name</label>
@@ -790,12 +797,12 @@ p{margin:0}
 <footer class="footer">
   <div class="wrap foot">
     <div>
-      <div class="brand">OXYPOD</div>
-      <p class="brand-sub">Project OxyPod: Biomimetic Deep-Sea Energy Harvester</p>
+      <div class="brand">HYDROPOD</div>
+      <p class="brand-sub">Project HydroPod: Biomimetic Deep-Sea Energy Harvester</p>
     </div>
     <p><strong>Acknowledgments.</strong> The dark-oxygen finding at the abyssal seafloor reported by Sweetman and colleagues (Nature Geoscience, 2024) inspired this project. Output figures on this site are design targets and simulated values, not field measurements.</p>
     <div class="copy">
-      <p>© 2026 Project OxyPod team. All rights reserved.</p>
+      <p>© 2026 Project HydroPod team. All rights reserved.</p>
       <a href="#home">Back to the surface</a>
     </div>
   </div>
@@ -803,16 +810,16 @@ p{margin:0}
 
 <script>
 /* ==========================================================================
-   Project OxyPod, behaviour
+   Project HydroPod, behaviour
    ========================================================================== */
 (() => {
 'use strict';
 
 /* ---- Edit these three values to wire the page up ---- */
 const CONFIG = {
-  SURVEY_URL: '#',                       // link to your survey (Google Forms, Typeform, ...)
+  SURVEY_URL: 'https://forms.gle/xb7HuAgSV5xVTi7DA', // link to your survey (Google Forms, Typeform, ...)
   SURVEY_EMBED_URL: '',                  // optional: an embeddable survey URL to show inline
-  CONTACT_EMAIL: 'team@oxypod.example'   // where the contact form email is addressed
+  CONTACT_EMAIL: 'hydropod26@gmail.com' // where the contact form email is addressed
 };
 
 const $  = (s, c = document) => c.querySelector(s);
@@ -886,25 +893,65 @@ $$('.spot').forEach(el => {
     const holder = $('#surveyEmbed');
     const f = document.createElement('iframe');
     f.src = CONFIG.SURVEY_EMBED_URL;
-    f.title = 'OxyPod community survey';
+    f.title = 'HydroPod community survey';
     f.loading = 'lazy';
     holder.appendChild(f);
     holder.hidden = false;
   }
 
   const form = $('#contactForm'), status = $('#formStatus');
-  form.addEventListener('submit', e => {
+  form.action = 'https://formsubmit.co/' + CONFIG.CONTACT_EMAIL;
+  const submitButton = form.querySelector('button[type="submit"]');
+  let submitting = false;
+  form.addEventListener('submit', async e => {
     e.preventDefault();
+    if (submitting) return;
     if (!form.checkValidity()){
       status.textContent = 'Please fill in your name, a valid email address and a message.';
       form.reportValidity();
       return;
     }
-    const d = new FormData(form);
-    const subject = 'OxyPod message from ' + d.get('name');
-    const body = d.get('message') + '\n\n' + d.get('name') + '\n' + d.get('email');
-    window.location.href = 'mailto:' + CONFIG.CONTACT_EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-    status.textContent = 'Opening your email app with the message ready. Nothing is sent until you press send there.';
+    if (window.location.protocol === 'file:') {
+      status.textContent = 'Please open this site through localhost or its published web address to send a message. Sending from a local file is not supported.';
+      return;
+    }
+    submitting = true;
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending…';
+    form.setAttribute('aria-busy', 'true');
+    status.textContent = 'Submitting your message…';
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 20000);
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/' + CONFIG.CONTACT_EMAIL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(Object.fromEntries(new FormData(form))),
+        signal: controller.signal
+      });
+      const result = await response.json().catch(() => null);
+      if (!result) {
+        throw new Error('The message service returned an unexpected response. Please try again later.');
+      }
+      if (!response.ok || (result.success !== true && result.success !== 'true')) {
+        throw new Error(typeof result.message === 'string' ? result.message : 'The message service is unavailable (HTTP ' + response.status + '). Please try again later.');
+      }
+      form.reset();
+      status.textContent = 'Thank you! Your message has been submitted to the team.';
+    } catch (error) {
+      const reason = error.name === 'AbortError'
+        ? 'The request timed out. We couldn’t confirm whether it was received.'
+        : error instanceof TypeError
+          ? 'Couldn’t connect to the message service. Check your connection or browser blocking settings.'
+          : error.message;
+      status.textContent = reason + ' Your message is still here.';
+    } finally {
+      clearTimeout(timeout);
+      submitting = false;
+      submitButton.disabled = false;
+      submitButton.textContent = 'Send message';
+      form.removeAttribute('aria-busy');
+    }
   });
 })();
 
@@ -964,7 +1011,7 @@ $$('.spot').forEach(el => {
     { title: 'Anode & Cathode Separation',
       text: 'Current now pulls water apart. Hydrogen forms at the cathode pylons and dark oxygen at the anode pylons. Keeping the two electrodes apart keeps the gases apart, so they never mix in the rising plume.',
       facts: [['Cathode (left)', 'Hydrogen, H₂'], ['Anode (right)', 'Dark oxygen, O₂'], ['Bubble ratio', '2 H₂ for every 1 O₂ by volume']] },
-    { title: 'Subsea OxyPod Hood Collection & Risers',
+    { title: 'Subsea HydroPod Hood Collection & Risers',
       text: 'A collection hood above each pylon catches the rising bubbles and funnels them into its own riser. Hydrogen and oxygen travel upward in separate pipes, ready to be stored or brought to the surface.',
       facts: [['Hydrogen output', '1,500 kg/hr'], ['Oxygen output', '12,000 kg/hr'], ['Energy demand', '46 kWh per kg of H₂']] }
   ];
