@@ -385,7 +385,7 @@ p{margin:0}
 /* ==========================================================================
    Team and contact
    ========================================================================== */
-.team{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.team{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}
 .member{padding:26px 24px 28px}
 .avatar{
   width:78px;height:78px;border-radius:50%;display:grid;place-items:center;margin-bottom:20px;
@@ -435,10 +435,12 @@ p{margin:0}
    Responsive tweaks
    ========================================================================== */
 @media (max-width:900px){
+  .team{grid-template-columns:repeat(2,minmax(0,1fr))}
   .split,.panel{grid-template-columns:minmax(0,1fr)}
   .hero{align-items:flex-start}
 }
 @media (max-width:520px){
+  .team{grid-template-columns:minmax(0,1fr)}
   .seg{display:flex;width:100%}
   .seg-btn{flex:1 1 100%;text-align:center}
   .gap-text{min-height:7.5em}
